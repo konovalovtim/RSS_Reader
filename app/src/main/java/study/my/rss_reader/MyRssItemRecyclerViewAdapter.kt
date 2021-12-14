@@ -22,13 +22,13 @@ class MyRssItemRecyclerViewAdapter(
 
     private val mOnClickListener: View.OnClickListener = View.OnClickListener {
     }
-
+//    идентификатор макета для отдельного элемента списка
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.fragment_r_s_s, parent, false)
         return ViewHolder(view)
     }
-
+//    связываем используемые текстовые метки с данными
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mValues[position]
         holder.titleTV?.text = item.title
@@ -54,7 +54,7 @@ class MyRssItemRecyclerViewAdapter(
             setOnClickListener(mOnClickListener)
         }
     }
-
+//    достаем значения item по id
     override fun getItemCount(): Int = mValues.size
 
     inner class ViewHolder(val mView: View) : RecyclerView.ViewHolder(mView) {

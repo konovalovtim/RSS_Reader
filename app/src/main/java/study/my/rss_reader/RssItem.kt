@@ -1,5 +1,5 @@
 package study.my.rss_reader
-
+//элементы recyclerview
 class RssItem {
     var title = ""
     var link = ""

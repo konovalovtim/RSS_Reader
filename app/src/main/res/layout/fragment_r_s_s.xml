@@ -11,10 +11,10 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_margin="8dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="319dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/featuredImg"
@@ -26,45 +26,39 @@
 
         <TextView
             android:id="@+id/txtTitle"
-            android:text="Title"
-            android:textStyle="bold"
-            android:textSize="18sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtPubdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="Publication Date"
-            android:textStyle="italic"
             android:textSize="12sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/txtContent"
-            android:textStyle="normal"
-            android:text="content"
-            android:visibility="gone"
-            android:textSize="14sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="content"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/txtLink"
-            android:textStyle="normal"
-            android:text="content"
-            android:visibility="gone"
-            android:textSize="14sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:backgroundTint="#006064"
-            android:text="Просмотреть" />
+            android:text="content"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
