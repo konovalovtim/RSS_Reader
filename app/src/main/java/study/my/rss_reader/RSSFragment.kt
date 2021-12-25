@@ -1,7 +1,6 @@
 package study.my.rss_reader
 
 import android.app.PendingIntent
-import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.AsyncTask
@@ -9,7 +8,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.webkit.WebView
 import android.widget.Toast
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.fragment.app.Fragment
@@ -22,8 +20,6 @@ import java.lang.ref.WeakReference
 import java.net.URL
 import javax.net.ssl.HttpsURLConnection
 import android.content.SharedPreferences
-import android.preference.PreferenceManager
-import android.provider.Settings.Global.putString
 import androidx.core.content.edit
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -93,6 +89,7 @@ class RSSFragment : Fragment() {
         RssFeedFetcher(this).execute(url)
         recyclerView.addOnItemTouchListener(RecyclerItemClickListener(recyclerView,
             object : RecyclerItemClickListener.OnItemClickListener {
+//                обработка нажатия на элемент
                 override fun onItemClick(view: View, position: Int) {
                     val builder = CustomTabsIntent.Builder()
                     val anotherCustomTab = CustomTabsIntent.Builder().build()

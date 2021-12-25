@@ -6,11 +6,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.text.TextUtils
 import androidx.browser.customtabs.CustomTabsService
-
-/**
- * Created by akshaynandwana on
- * 08, February, 2019
- **/
+//реализация встроенного окна браузера
 class CustomTabHelper {
 
     companion object {
