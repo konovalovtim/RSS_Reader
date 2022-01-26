@@ -69,7 +69,7 @@ class MyRssItemRecyclerViewAdapter(
     private fun getFeaturedImageLink(htmlText: String): String? {
         var result: String? = null
 
-        val stringBuilder = StringBuilder()
+        StringBuilder()
         try {
             val doc: Document = Jsoup.parse(htmlText)
             val imgs: Elements = doc.select("img")

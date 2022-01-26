@@ -1,6 +1,5 @@
 package study.my.rss_reader
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -72,19 +71,19 @@ class MainActivity : AppCompatActivity() {
     fun nextStep(editText: EditText) {
         urledit = editText.text.toString()
 
-        if (item1.equals(""))  {
+        if (item1 == "")  {
             item1 = urledit
             menu.findItem(R.id.item1).title = urledit
-        } else if (item2.equals("")) {
+        } else if (item2 == "") {
             item2 = urledit
             menu.findItem(R.id.item2).title = urledit
-        } else if (item3.equals("")) {
+        } else if (item3 == ("")) {
             item3 = urledit
             menu.findItem(R.id.item3).title = urledit
-        } else if (item4.equals("")) {
+        } else if (item4 == ("")) {
             item4 = urledit
             menu.findItem(R.id.item4).title = urledit
-        } else if (item5.equals("")) {
+        } else if (item5 == ("")) {
             item5 = urledit
             menu.findItem(R.id.item5).title = urledit
         }
